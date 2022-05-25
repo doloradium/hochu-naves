@@ -129,6 +129,10 @@ span {
   margin-bottom: 10px;
 }
 
+.btn__p {
+  font-size: 12px;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -447,23 +451,6 @@ header .header__container .burger__icon {
   }
 }
 
-.btn__container {
-  text-align: center;
-}
-
-.btn__container .btn__p {
-  font-size: 12px;
-  max-width: 250px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1280px) {
-  .btn__container .btn__p {
-    font-size: smaller;
-  }
-}
-
 .specialist {
   padding: 0 10px;
   margin: 100px auto;
@@ -498,6 +485,7 @@ header .header__container .burger__icon {
   text-align: center;
   background-color: #dbebff;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -536,6 +524,10 @@ header .header__container .burger__icon {
   }
 }
 
+.specialist .specialist__benefits .benefits__list .benefit .benefit__text {
+  max-width: 120px;
+}
+
 @media screen and (max-width: 1280px) {
   .specialist .specialist__benefits {
     width: 80%;
@@ -553,14 +545,7 @@ header .header__container .burger__icon {
 }
 
 .pros .pros__container h1 {
-  margin-bottom: 50px;
-  font-size: 32px;
-}
-
-@media screen and (max-width: 769px) {
-  .pros .pros__container h1 {
-    font-size: 24px;
-  }
+  margin-bottom: 50 px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -739,6 +724,10 @@ header .header__container .burger__icon {
 .types .colors__full--mini .colors__list .colors__row .color__item .color__image {
   width: 64px;
   height: 64px;
+}
+
+.types .colors__full--mini .colors__list .colors__row .color__item .color__text {
+  word-wrap: break-word;
 }
 
 .types .colors__list {
@@ -943,30 +932,6 @@ header .header__container .burger__icon {
   max-width: 250px;
 }
 
-.specialist__btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-style: 16px;
-}
-
-@media screen and (max-width: 769px) {
-  .btn {
-    font-size: smaller;
-  }
-}
-
-footer {
-  font-size: 18px;
-}
-
 @media screen and (max-width: 769px) {
   footer {
     -webkit-box-orient: vertical;
@@ -977,27 +942,20 @@ footer {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 830px) {
   footer {
     font-size: smaller;
   }
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 769px) {
   footer {
-    word-wrap: break-word;
+    font-size: larger;
   }
 }
 
 footer .logo__link .logo {
   margin-bottom: 30px;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 769px) {
-  footer .logo__link .logo {
-    margin-left: 0;
-  }
 }
 
 footer .types {

@@ -40,6 +40,10 @@ span {
     margin-bottom: 10px;
 }
 
+.btn__p {
+    font-size: 12px;
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -298,19 +302,6 @@ header{
     }
 }
 
-.btn__container {
-    text-align: center;
-    .btn__p {
-        font-size: 12px;
-        max-width: 250px;
-        text-align: center;
-        margin: 0 auto;
-        @media screen and (max-width: 1280px) {
-            font-size: smaller;
-        }
-    }
-}
-
 .specialist {
     @extend %df;
     padding: 0 10px;
@@ -337,6 +328,7 @@ header{
         text-align: center;
         background-color: #dbebff;
         border-radius: 5px;
+        font-size: 18px;
         @media screen and (max-width: 1280px) {
             width: 80%;
             margin: 0 auto 50px;
@@ -359,6 +351,11 @@ header{
             @media screen and (max-width: 470px) {
                 flex-direction: column;
             }
+            .benefit {
+                .benefit__text {
+                    max-width: 120px;
+                }
+            }
         }
         @media screen and (max-width: 1280px) {
             width: 80%;
@@ -373,11 +370,7 @@ header{
         padding: 100px 20px;
         text-align: center;
         h1 {
-            margin-bottom: 50px;
-            font-size: 32px;
-            @media screen and (max-width: 769px) {
-                font-size: 24px;
-            }
+            margin-bottom: 50 px
         }
         .pros__list {
             @extend %df;
@@ -509,6 +502,9 @@ header{
                     .color__image {
                         width: 64px;
                         height: 64px;
+                    }
+                    .color__text {
+                        word-wrap: break-word;
                     }
                 }
             }
@@ -673,46 +669,21 @@ header{
     }
 }
 
-
-.specialist__btn {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-style: 16px;
-    @media screen and (max-width: 769px) {
-        font-size: smaller;
-    }
-}
-
-
 footer {
     @extend %df;
-    font-size: 18px;
     @media screen and (max-width: 769px) {
         flex-direction: column;
         text-align: center;
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 830px) {
         font-size: smaller;
     }
-    @media screen and (max-width: 310px) {
-        word-wrap: break-word;   
+    @media screen and (max-width: 769px) {
+        font-size: larger;
     }
     .logo__link {
         .logo {
             margin-bottom: 30px;
-            margin-left: 20px;
-            @media screen and (max-width: 769px) {
-                margin-left: 0;
-            }
         }
     }
     .types {
