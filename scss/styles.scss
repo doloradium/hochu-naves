@@ -373,7 +373,11 @@ header{
         padding: 100px 20px;
         text-align: center;
         h1 {
-            margin-bottom: 50 px
+            margin-bottom: 50px;
+            font-size: 32px;
+            @media screen and (max-width: 769px) {
+                font-size: 24px;
+            }
         }
         .pros__list {
             @extend %df;
