@@ -82,7 +82,7 @@ select {
   }
 }
 
-header .header__container, header .header__container nav, .specialist, .specialist .specialist__benefits .benefits__list, .pros .pros__container .pros__list, .pros__list__first, .pros__list__second, .pros__list__third, .pros__list__mini, .types .types__construction, .types .types__construction .construction__first, .types .colors__list, .types .colors__list .colors__row, .nav--materials .materials__list, .materials__benefits, .materials__benefits .materials__text .text__block, .phone__container .phone__fields, footer {
+header .header__container, header .header__container nav, .specialist, .specialist .specialist__benefits .benefits__list, .pros .pros__container .pros__list, .pros__list__first, .pros__list__second, .pros__list__third, .pros__list__mini, .types .types__construction, .types .types__construction .construction__first, .types .colors__list, .types .colors__list .colors__row, .nav--materials .materials__list, .materials__benefits, .materials__benefits .materials__text .text__block, .phone__container .phone__fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,8 +447,15 @@ header .header__container .burger__icon {
   }
 }
 
+.btn__container {
+  text-align: center;
+}
+
 .btn__container .btn__p {
+  margin: 0 auto;
   font-size: 12px;
+  max-width: 250px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1280px) {
@@ -927,67 +934,4 @@ header .header__container .burger__icon {
 .phone__container .button p {
   margin: 0 auto;
   max-width: 250px;
-}
-
-footer {
-  font-size: 18px;
-}
-
-@media screen and (max-width: 769px) {
-  footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  footer {
-    font-size: smaller;
-  }
-}
-
-@media screen and (max-width: 310px) {
-  footer {
-    word-wrap: break-word;
-  }
-}
-
-footer .logo__link .logo {
-  margin-bottom: 30px;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 769px) {
-  footer .logo__link .logo {
-    margin-left: 0;
-  }
-}
-
-footer .types {
-  text-align: left;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 769px) {
-  footer .types {
-    text-align: center;
-  }
-}
-
-footer .types .types__header {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-footer .types .types__content li {
-  margin-bottom: 5px;
-}
-
-footer .types .types__content li a {
-  color: #000;
 }
