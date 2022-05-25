@@ -500,10 +500,6 @@ header .header__container .burger__icon {
   }
 }
 
-.specialist .specialist__form .text {
-  font-size: 18px;
-}
-
 .specialist .specialist__form p {
   max-width: 250px;
   margin: 0 auto;
