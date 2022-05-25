@@ -428,6 +428,7 @@ header{
             .benefit {
                 .benefit__text {
                     max-width: 120px;
+                    word-wrap: break-word;
                 }
             }
         }
@@ -484,9 +485,12 @@ header{
         align-items: center;
         .benefit {
             .benefit__text {
-                @media screen and (max-width: 310px) {
-                    width: 64px;
+                max-width: 150px;
+                @media screen and (max-width: 470px) {
                     word-wrap: break-word;   
+                }
+                @media screen and (max-width: 310px) {
+                    max-width: 64px;  
                 }
             }
         }

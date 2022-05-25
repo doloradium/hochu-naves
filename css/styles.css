@@ -618,6 +618,7 @@ header .header__container .burger__icon {
 
 .specialist .specialist__benefits .benefits__list .benefit .benefit__text {
   max-width: 120px;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 1280px) {
@@ -691,10 +692,19 @@ header .header__container .burger__icon {
           align-items: center;
 }
 
+.pros__list__mini .pros__list__first .benefit .benefit__text {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 470px) {
+  .pros__list__mini .pros__list__first .benefit .benefit__text {
+    word-wrap: break-word;
+  }
+}
+
 @media screen and (max-width: 310px) {
   .pros__list__mini .pros__list__first .benefit .benefit__text {
-    width: 64px;
-    word-wrap: break-word;
+    max-width: 64px;
   }
 }
 
