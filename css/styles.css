@@ -310,13 +310,13 @@ a {
 .menu .menu__container li a {
   color: #000;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .menu .menu__container .menu__logo {
-  margin: 35vh auto 40px;
+  margin: 30% auto 40px;
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .menu--active {
@@ -956,6 +956,7 @@ header .header__container .burger__icon {
 
 footer .logo__link .logo {
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 footer .types {
