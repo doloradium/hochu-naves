@@ -667,16 +667,24 @@ header{
 
 footer {
     @extend %df;
+    font-size: 18px;
     @media screen and (max-width: 769px) {
         flex-direction: column;
         text-align: center;
     }
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 960px) {
         font-size: smaller;
+    }
+    @media screen and (max-width: 310px) {
+        word-wrap: break-word;   
     }
     .logo__link {
         .logo {
             margin-bottom: 30px;
+            margin-left: 20px;
+            @media screen and (max-width: 769px) {
+                margin-left: 0;
+            }
         }
     }
     .types {
