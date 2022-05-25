@@ -33,6 +33,7 @@ span {
     padding: 10px;
     outline-width: 0;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .specialist__btn {
@@ -51,6 +52,7 @@ span {
     text-transform: uppercase;
     font-weight: 600;
     font-style: 16px;
+    margin: 0 auto;
     @media screen and (max-width: 769px) {
         font-size: smaller;
     }
@@ -177,7 +179,7 @@ a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
     background: #fff;
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
@@ -209,6 +211,44 @@ a {
     width: 30px;
     fill: #000;
     margin: 15px 15px 0 auto;
+}
+
+.specialist__form__container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    z-index: 3;
+    .specialist__form {
+        opacity: 100%;
+        margin: 100px auto;
+        max-width: 400px;
+        background-color: #dbebff;
+        border-radius: 5px;
+        padding: 30px;
+        position: relative;
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .instruction {
+            text-align: center;
+        }
+        .cross__link {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    }
+}
+
+.specialist__form__container--active {
+    display: block;
 }
 
 body {
