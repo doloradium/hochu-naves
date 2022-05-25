@@ -24,6 +24,9 @@ span {
 .instruction {
     margin-bottom: 10px;
     font-size: 18px;
+    @media screen and (max-width: 769px) {
+        font-size: 15px;
+    }
 }
 
 .input {
@@ -35,6 +38,9 @@ span {
     outline: none;
     background-color: #fff;
     background: #fff;
+    @media screen and (max-width: 769px) {
+        font-size: 15px;
+    }
 }
 
 .specialist__btn {
@@ -62,7 +68,7 @@ span {
     color: #fff;
     border-radius: 5px;
     padding: 10px 20px;
-    @media screen and (max-width: 796px) {
+    @media screen and (max-width: 769px) {
         font-size: 15px;
     }
 }
@@ -75,7 +81,7 @@ span {
     font-weight: 600;
     font-style: 16px;
     margin-bottom: 10px;
-    @media screen and (max-width: 796px) {
+    @media screen and (max-width: 769px) {
         font-size: 15px;
     }
 }
@@ -258,7 +264,10 @@ a {
             }
             p {
                 text-align: center;
-                margin-bottom: 20px;
+                margin: 0 auto 20px;
+                @media screen and (max-width: 769px) {
+                    max-width: 250px;
+                }
             }
             .instruction {
                 text-align: center;
@@ -280,7 +289,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     @media screen and (max-width: 769px) {
-        font-size: 13px;
+        font-size: 15px;
         h1 {
             font-size: 24px;
         }
@@ -288,7 +297,7 @@ body {
             font-size: 20px;       
         }
         p {
-            font-size: 16px;       
+            font-size: 15px;       
         }
     }
     @media screen and (max-width: 310px) {
@@ -741,7 +750,7 @@ footer {
         text-align: center;
     }
     @media screen and (max-width: 830px) {
-        font-size: 13px;
+        font-size: 15px;
     }
     @media screen and (max-width: 769px) {
         font-size: 16px;
