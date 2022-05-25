@@ -86,6 +86,7 @@ span {
     color: #3971ff;
     &:hover {
         background-color: #dbebff;
+        transition: 0.5s;
     }
 }
 
@@ -94,6 +95,7 @@ span {
     color: #fff;
     &:hover {
         background-color:#5c8aff;
+        transition: 0.5s;
     }
 }
 
@@ -211,6 +213,7 @@ a {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
     @media screen and (max-width: 769px) {
         font-size: smaller;
         h1 {
@@ -273,12 +276,11 @@ header{
     background-color: #3971ff;
     .hero__content {
         width: 40%;
-        min-width: 600px;
+        max-width: 600px;
         padding: 214px 20px 150px;
         @media screen and (max-width: 1280px) {
             margin: 0 auto;
             text-align: center;
-            min-width: 0;
             max-width: 600px;
             width: 80%;
         }
