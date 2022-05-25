@@ -447,6 +447,10 @@ header .header__container .burger__icon {
   }
 }
 
+.btn__container .btn__p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1280px) {
   .btn__container .btn__p {
     font-size: smaller;
