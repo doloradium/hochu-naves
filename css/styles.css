@@ -120,8 +120,9 @@ span {
   border-radius: 5px;
   border: none;
   padding: 10px;
-  outline-width: 0;
   margin-bottom: 20px;
+  outline: none;
+  background-color: #fff;
 }
 
 .specialist__btn {
@@ -131,6 +132,24 @@ span {
 
 .btn__p {
   font-size: 12px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.btn__link {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.special__button {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #3971ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .btn {
@@ -140,7 +159,7 @@ span {
   text-transform: uppercase;
   font-weight: 600;
   font-style: 16px;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 769px) {
@@ -285,7 +304,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #fff;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -340,9 +359,13 @@ a {
   z-index: 3;
 }
 
-.specialist__form__container .specialist__form {
+.specialist__form__container .specialist__form__padding {
+  padding: 0 20px;
+}
+
+.specialist__form__container .specialist__form__padding .specialist__form {
   opacity: 100%;
-  margin: 100px auto;
+  margin: 80px auto;
   max-width: 400px;
   background-color: #dbebff;
   border-radius: 5px;
@@ -350,24 +373,24 @@ a {
   position: relative;
 }
 
-.specialist__form__container .specialist__form h2 {
-  margin-top: 30px;
+.specialist__form__container .specialist__form__padding .specialist__form h2 {
+  margin-top: 10px;
   text-align: center;
 }
 
-.specialist__form__container .specialist__form p {
+.specialist__form__container .specialist__form__padding .specialist__form p {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.specialist__form__container .specialist__form .instruction {
+.specialist__form__container .specialist__form__padding .specialist__form .instruction {
   text-align: center;
 }
 
-.specialist__form__container .specialist__form .cross__link {
+.specialist__form__container .specialist__form__padding .specialist__form .cross__link__second {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: -5px;
+  top: -5px;
 }
 
 .specialist__form__container--active {

@@ -31,8 +31,8 @@ span {
     border-radius: 5px;
     border: none;
     padding: 10px;
-    outline-width: 0;
     margin-bottom: 20px;
+    outline: none;
     background-color: #fff;
 }
 
@@ -43,6 +43,27 @@ span {
 
 .btn__p {
     font-size: 12px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.btn__link {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.special__button {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #3971ff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    @media screen (max-width: 796px) {
+        font-size: 15px;
+    }
 }
 
 .btn {
@@ -52,9 +73,9 @@ span {
     text-transform: uppercase;
     font-weight: 600;
     font-style: 16px;
-    margin: 0 auto;
+    margin-bottom: 10px;
     @media screen and (max-width: 769px) {
-        font-size: smaller;
+        font-size: 15px;
     }
 }
 
@@ -220,29 +241,32 @@ a {
     display: none;
     background-color: hsla(0, 0%, 0%, 0.3);
     z-index: 3;
-    .specialist__form {
-        opacity: 100%;
-        margin: 100px auto;
-        max-width: 400px;
-        background-color: #dbebff;
-        border-radius: 5px;
-        padding: 30px;
-        position: relative;
-        h2 {
-            margin-top: 30px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .instruction {
-            text-align: center;
-        }
-        .cross__link {
-            position: absolute;
-            right: 5px;
-            top: 5px;
+    .specialist__form__padding {
+        padding: 0 20px;
+        .specialist__form {
+            opacity: 100%;
+            margin: 80px auto;
+            max-width: 400px;
+            background-color: #dbebff;
+            border-radius: 5px;
+            padding: 30px;
+            position: relative;
+            h2 {
+                margin-top: 10px;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .instruction {
+                text-align: center;
+            }
+            .cross__link__second {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+            }
         }
     }
 }
@@ -255,7 +279,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     @media screen and (max-width: 769px) {
-        font-size: smaller;
+        font-size: 13px;
         h1 {
             font-size: 24px;
         }
@@ -716,10 +740,10 @@ footer {
         text-align: center;
     }
     @media screen and (max-width: 830px) {
-        font-size: smaller;
+        font-size: 13px;
     }
     @media screen and (max-width: 769px) {
-        font-size: larger;
+        font-size: 16px;
     }
     .logo__link {
         .logo {

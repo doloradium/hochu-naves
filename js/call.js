@@ -1,13 +1,13 @@
-(function() {
-    const openingBtn = document.querySelector('.form__active');
+(function () {
+    const openingBtn = document.querySelectorAll('.form__active');
     const closingBtn = document.querySelector('.cross__link__second');
     const sidebar = document.querySelector('.specialist__form__container');
-    
-    openingBtn.addEventListener("click", function() {
-        sidebar.classList.add('specialist__form__container--active');
-    });
-    
-    closingBtn.addEventListener("click", function() {
+
+    for (let btn of openingBtn) {
+        btn.addEventListener("click", () => sidebar.classList.add('specialist__form__container--active'));
+    }
+
+    closingBtn.addEventListener("click", function () {
         sidebar.classList.remove('specialist__form__container--active');
     });
-    }())
+}())
