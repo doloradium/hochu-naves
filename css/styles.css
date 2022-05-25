@@ -183,6 +183,8 @@ span {
 
 .btn_white:hover {
   background-color: #dbebff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn_blue {
@@ -192,6 +194,8 @@ span {
 
 .btn_blue:hover {
   background-color: #5c8aff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn__card {
@@ -328,6 +332,7 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 769px) {
@@ -345,11 +350,18 @@ body {
   }
 }
 
+@media screen and (max-width: 310px) {
+  body {
+    word-wrap: break-word;
+  }
+}
+
 header {
   position: fixed;
   background-color: #fff;
   width: 100%;
   z-index: 1;
+  top: 0;
 }
 
 header .header__container {
@@ -408,7 +420,7 @@ header .header__container .burger__icon {
 
 .hero .hero__content {
   width: 40%;
-  min-width: 600px;
+  max-width: 600px;
   padding: 214px 20px 150px;
 }
 
@@ -416,7 +428,6 @@ header .header__container .burger__icon {
   .hero .hero__content {
     margin: 0 auto;
     text-align: center;
-    min-width: 0;
     max-width: 600px;
     width: 80%;
   }
@@ -584,6 +595,13 @@ header .header__container .burger__icon {
           align-items: center;
 }
 
+@media screen and (max-width: 310px) {
+  .pros__list__mini .pros__list__first .benefit .benefit__text {
+    width: 64px;
+    word-wrap: break-word;
+  }
+}
+
 .pros__list__mini .pros__list__fourth {
   margin: 0 auto;
 }
@@ -693,6 +711,15 @@ header .header__container .burger__icon {
 
 .types .colors__full--mini .colors__list .colors__row {
   max-width: 300px;
+}
+
+.types .colors__full--mini .colors__list .colors__row .color__item {
+  width: 64px;
+}
+
+.types .colors__full--mini .colors__list .colors__row .color__item .color__image {
+  width: 64px;
+  height: 64px;
 }
 
 .types .colors__list {

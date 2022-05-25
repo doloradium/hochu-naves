@@ -226,6 +226,9 @@ body {
             font-size: 16px;       
         }
     }
+    @media screen and (max-width: 310px) {
+        word-wrap: break-word;   
+    }
 }
 
 header{
@@ -233,6 +236,7 @@ header{
     background-color: #fff;
     width: 100%;
     z-index: 1;
+    top: 0;
     .header__container {
         @extend %df;
         text-transform: uppercase;
@@ -382,6 +386,7 @@ header{
     @extend %df;
     margin-bottom: 30px;
 }
+
 .pros__list__third {
     margin: 0 auto;
 }
@@ -398,6 +403,14 @@ header{
     }
     .pros__list__first {
         align-items: center;
+        .benefit {
+            .benefit__text {
+                @media screen and (max-width: 310px) {
+                    width: 64px;
+                    word-wrap: break-word;   
+                }
+            }
+        }
     }
     .pros__list__fourth {
         margin: 0 auto;
@@ -479,6 +492,13 @@ header{
         .colors__list {
             .colors__row {
                 max-width: 300px;
+                .color__item {
+                    width: 64px;
+                    .color__image {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
             }
         }
     }
