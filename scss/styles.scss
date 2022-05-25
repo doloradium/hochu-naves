@@ -7,6 +7,9 @@
 
 span {
     font-size: 24px;
+    @media screen and (max-width: 769px) {
+        font-size: 20px;
+    }
 }
 
 .wrapper {
@@ -124,7 +127,6 @@ a {
     font-weight: 900;
     color: #000;
     text-transform: uppercase;
-    padding-left: 20px;
 }
 
 .dropdown {
@@ -235,7 +237,7 @@ header{
             font-size: 16px;
         }
         .header__logo {
-            margin: 20px 0;
+            margin: 20px 0 0 20px;
         }
         nav {
             @extend %df;
@@ -337,8 +339,12 @@ header{
         text-align: center;
         .benefits__list {
             @extend %df;
-            max-width: 500px;
             margin: 0 auto;
+            align-items: center;
+            max-width: 500px;
+            @media screen and (max-width: 470px) {
+                flex-direction: column;
+            }
         }
         @media screen and (max-width: 1280px) {
             width: 80%;
@@ -357,25 +363,47 @@ header{
         }
         .pros__list {
             @extend %df;
-            .pros__list__first, .pros__list__second, .pros__list__third {
-                @extend %df;
-                margin-bottom: 30px;
-            }
-            .pros__list__third {
-                margin: 0 auto;
-            }
             @media screen and (max-width: 1280px) {
                 flex-direction: column;
                 max-width: 500px;
                 margin: 0 auto;
                 padding: 0 20px;
             }
+            @media screen and (max-width: 460px) {
+                display: none;
+            }
         }
     }
 }
 
+.pros__list__first, .pros__list__second, .pros__list__third {
+    @extend %df;
+    margin-bottom: 30px;
+}
+.pros__list__third {
+    margin: 0 auto;
+}
+
+.pros__list__mini {
+    @extend %df;
+    display: none;
+    @media screen and (max-width: 460px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 300px;
+    }
+    .pros__list__first {
+        align-items: center;
+    }
+    .pros__list__fourth {
+        margin: 0 auto;
+    }
+}
+
 .types {
-    margin: 100px auto 30px;
+    margin: 100px auto 50px;
     text-align: center;
     padding: 0 20px; 
     h2 {
@@ -383,7 +411,6 @@ header{
     }
     .types__construction {
         @extend %df;
-        margin-bottom: 25px;
         @media screen and (max-width: 1280px) {
             flex-direction: column;
         }
@@ -394,6 +421,9 @@ header{
             @media screen and (max-width: 1280px) {
                 max-width: 600px;
                 width: 100%;
+            }
+            @media screen and (max-width: 460px) {
+                flex-direction: column;
             }
             .types__construction {
                 flex-direction: column;
@@ -431,6 +461,26 @@ header{
             }
         }
     }
+
+    .colors__full {
+        display: block;
+        @media screen and (max-width: 460px) {
+            display: none;
+        }
+    }
+
+    .colors__full--mini {
+        display: none;
+        @media screen and (max-width: 460px) {
+            display: block;
+        }
+        .colors__list {
+            .colors__row {
+                max-width: 300px;
+            }
+        }
+    }
+
     .colors__list {
         @extend %df;
         margin-bottom: 30px;

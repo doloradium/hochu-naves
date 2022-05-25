@@ -82,7 +82,7 @@ select {
   }
 }
 
-header .header__container, header .header__container nav, .specialist, .specialist .specialist__benefits .benefits__list, .pros .pros__container .pros__list, .pros .pros__container .pros__list .pros__list__first, .pros .pros__container .pros__list .pros__list__second, .pros .pros__container .pros__list .pros__list__third, .types .types__construction, .types .types__construction .construction__first, .types .colors__list, .types .colors__list .colors__row, .nav--materials .materials__list, .materials__benefits, .materials__benefits .materials__text .text__block, .phone__container .phone__fields, footer {
+header .header__container, header .header__container nav, .specialist, .specialist .specialist__benefits .benefits__list, .pros .pros__container .pros__list, .pros__list__first, .pros__list__second, .pros__list__third, .pros__list__mini, .types .types__construction, .types .types__construction .construction__first, .types .colors__list, .types .colors__list .colors__row, .nav--materials .materials__list, .materials__benefits, .materials__benefits .materials__text .text__block, .phone__container .phone__fields, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +93,12 @@ header .header__container, header .header__container nav, .specialist, .speciali
 
 span {
   font-size: 24px;
+}
+
+@media screen and (max-width: 769px) {
+  span {
+    font-size: 20px;
+  }
 }
 
 .wrapper {
@@ -218,7 +224,6 @@ a {
   font-weight: 900;
   color: #000;
   text-transform: uppercase;
-  padding-left: 20px;
 }
 
 .dropdown {
@@ -358,7 +363,7 @@ header .header__container {
 }
 
 header .header__container .header__logo {
-  margin: 20px 0;
+  margin: 20px 0 0 20px;
 }
 
 header .header__container nav {
@@ -492,8 +497,20 @@ header .header__container .burger__icon {
 }
 
 .specialist .specialist__benefits .benefits__list {
-  max-width: 500px;
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 470px) {
+  .specialist .specialist__benefits .benefits__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -516,14 +533,6 @@ header .header__container .burger__icon {
   margin-bottom: 50 px;
 }
 
-.pros .pros__container .pros__list .pros__list__first, .pros .pros__container .pros__list .pros__list__second, .pros .pros__container .pros__list .pros__list__third {
-  margin-bottom: 30px;
-}
-
-.pros .pros__container .pros__list .pros__list__third {
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 1280px) {
   .pros .pros__container .pros__list {
     -webkit-box-orient: vertical;
@@ -536,18 +545,57 @@ header .header__container .burger__icon {
   }
 }
 
+@media screen and (max-width: 460px) {
+  .pros .pros__container .pros__list {
+    display: none;
+  }
+}
+
+.pros__list__first, .pros__list__second, .pros__list__third {
+  margin-bottom: 30px;
+}
+
+.pros__list__third {
+  margin: 0 auto;
+}
+
+.pros__list__mini {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
+  .pros__list__mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 300px;
+  }
+}
+
+.pros__list__mini .pros__list__first {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pros__list__mini .pros__list__fourth {
+  margin: 0 auto;
+}
+
 .types {
-  margin: 100px auto 30px;
+  margin: 100px auto 50px;
   text-align: center;
   padding: 0 20px;
 }
 
 .types h2 {
   margin-bottom: 40px;
-}
-
-.types .types__construction {
-  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -568,6 +616,15 @@ header .header__container .burger__icon {
   .types .types__construction .construction__first {
     max-width: 600px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .types .types__construction .construction__first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -612,6 +669,30 @@ header .header__container .burger__icon {
   font-weight: 600;
   color: #3971ff;
   margin-bottom: 5px;
+}
+
+.types .colors__full {
+  display: block;
+}
+
+@media screen and (max-width: 460px) {
+  .types .colors__full {
+    display: none;
+  }
+}
+
+.types .colors__full--mini {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
+  .types .colors__full--mini {
+    display: block;
+  }
+}
+
+.types .colors__full--mini .colors__list .colors__row {
+  max-width: 300px;
 }
 
 .types .colors__list {
