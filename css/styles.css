@@ -945,12 +945,6 @@ header .header__container .burger__icon {
   }
 }
 
-@media screen and (max-width: 769px) {
-  footer {
-    font-size: larger;
-  }
-}
-
 footer .logo__link .logo {
   margin-bottom: 30px;
 }
