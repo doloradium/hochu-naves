@@ -983,3 +983,13 @@ footer .types .types__content li {
 footer .types .types__content li a {
   color: #000;
 }
+
+.pros .pros__container h1 {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 769px) {
+  .pros .pros__container h1 {
+    font-size: 24px;
+  }
+}
