@@ -1043,3 +1043,8 @@ header .header__container .burger__icon {
     font-size: 24px;
   }
 }
+
+.footer {
+  color: red;
+  font-size: 50px;
+}
