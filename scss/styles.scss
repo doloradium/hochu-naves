@@ -747,50 +747,6 @@ header{
     }
 }
 
-footer {
-    @extend %df;
-    @media screen and (max-width: 769px) {
-        flex-direction: column;
-        text-align: center;
-    }
-    @media screen and (max-width: 830px) {
-        font-size: 15px;
-    }
-    @media screen and (max-width: 769px) {
-        font-size: 16px;
-    }
-    .logo__link {
-        .logo {
-            margin-bottom: 30px;
-            margin-left: 20px;
-            @media screen and (max-width: 769px) {
-                margin-left: 0;
-            }
-        }
-    }
-    .types {
-        text-align: left;
-        margin: 0;
-        margin-bottom: 50px;
-        @media screen and (max-width: 769px) {
-            text-align: center;
-        }
-        .types__header {
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        .types__content {
-            li {
-                margin-bottom: 5px;
-                a {
-                    color: #000;
-                }
-            }
-        }
-    }
-}
-
 .pros {
     .pros__container {
         h1 {
