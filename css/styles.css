@@ -418,16 +418,6 @@ a {
   top: -5px;
 }
 
-footer {
-  color: red;
-  font-size: 50px;
-}
-
-footer div {
-  color: blue;
-  font-size: 18px;
-}
-
 .specialist__form__container--active {
   display: block;
 }
@@ -1052,4 +1042,14 @@ header .header__container .burger__icon {
   .pros .pros__container h1 {
     font-size: 24px;
   }
+}
+
+.footer {
+  color: red;
+  font-size: 50px;
+}
+
+.footer div {
+  color: blue;
+  font-size: 18px;
 }
