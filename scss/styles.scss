@@ -264,12 +264,15 @@ a {
         padding: 0 20px;
         .specialist__form {
             opacity: 100%;
-            margin: 80px auto;
             max-width: 400px;
             background-color: #dbebff;
             border-radius: 5px;
             padding: 30px;
             position: relative;
+            margin: 80px auto;
+            @media screen and (max-width: 450px) {
+                margin: 20px auto;
+            }
             h2 {
                 margin-top: 10px;
                 text-align: center;
