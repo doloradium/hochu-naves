@@ -363,15 +363,19 @@ header{
                 display: none;
             }
         }
-        .burger__icon {
-            margin: 20px;
-            width: 20px;
-            fill: #000;
+        .burger__link {
+            background-color: #fff;
+            border: none;
             display: none;
-            z-index: 2;
             overflow: hidden;
+            margin: 17px;
             @media screen and (max-width: 769px) {
                 display: block;
+            }
+            .burger__icon {
+                width: 20px;
+                fill: #000;
+                z-index: 2;
             }
         }
     }

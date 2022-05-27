@@ -533,19 +533,24 @@ header .header__container nav .nav__option:hover {
   }
 }
 
-header .header__container .burger__icon {
-  margin: 20px;
-  width: 20px;
-  fill: #000;
+header .header__container .burger__link {
+  background-color: #fff;
+  border: none;
   display: none;
-  z-index: 2;
   overflow: hidden;
+  margin: 17px;
 }
 
 @media screen and (max-width: 769px) {
-  header .header__container .burger__icon {
+  header .header__container .burger__link {
     display: block;
   }
+}
+
+header .header__container .burger__link .burger__icon {
+  width: 20px;
+  fill: #000;
+  z-index: 2;
 }
 
 .hero {
