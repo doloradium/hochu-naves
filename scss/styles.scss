@@ -368,7 +368,7 @@ header{
             border: none;
             display: none;
             overflow: hidden;
-            margin: 17px;
+            margin: 17px 10px;
             @media screen and (max-width: 769px) {
                 display: block;
             }
@@ -593,6 +593,8 @@ header{
                     background-color: #fff;
                     cursor: pointer;
                     width: 100%;
+                    display: block;
+                    font: inherit;
                 }
             }
         }

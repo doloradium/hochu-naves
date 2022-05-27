@@ -538,7 +538,7 @@ header .header__container .burger__link {
   border: none;
   display: none;
   overflow: hidden;
-  margin: 17px;
+  margin: 17px 10px;
 }
 
 @media screen and (max-width: 769px) {
@@ -848,6 +848,8 @@ header .header__container .burger__link .burger__icon {
   background-color: #fff;
   cursor: pointer;
   width: 100%;
+  display: block;
+  font: inherit;
 }
 
 .types .colors__full {
