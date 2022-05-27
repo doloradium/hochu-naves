@@ -853,6 +853,9 @@ footer {
                 margin-bottom: 5px;
                 a {
                     color: #000;
+                    &:hover {
+                        color: rgb(151, 151, 151);
+                    }
                 }
             }
         }

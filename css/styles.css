@@ -1186,3 +1186,7 @@ footer .types .types__content li {
 footer .types .types__content li a {
   color: #000;
 }
+
+footer .types .types__content li a:hover {
+  color: #979797;
+}
