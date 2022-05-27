@@ -809,10 +809,16 @@ header .header__container .burger__link .burger__icon {
 }
 
 .types .types__construction .construction__first .types__construction .type__image {
-  width: 90%;
+  width: 100%;
   height: 150px;
   background-color: #3971ff;
   margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.types .types__construction .construction__first .types__construction .type__image__first {
+  width: 90%;
+  background-color: #3971ff;
   border-radius: 5px 5px 0 0;
 }
 
@@ -829,14 +835,17 @@ header .header__container .burger__link .burger__icon {
   background-color: #dbebff;
   width: 90%;
   margin: 0 auto;
-  padding: 20px 30px 10px;
 }
 
-.types .types__construction .construction__first .types__construction .type__name__second .price__heading {
+.types .types__construction .construction__first .types__construction .type__name__second .type__text {
+  padding: 20px;
+}
+
+.types .types__construction .construction__first .types__construction .type__name__second .type__text .price__heading {
   margin-bottom: 10px;
 }
 
-.types .types__construction .construction__first .types__construction .type__name__second .price__value {
+.types .types__construction .construction__first .types__construction .type__name__second .type__text .price__value {
   font-weight: 600;
   color: #3971ff;
   margin-bottom: 5px;
@@ -845,11 +854,12 @@ header .header__container .burger__link .burger__icon {
 .types .types__construction .construction__first .types__construction button {
   border: none;
   padding: 0;
-  background-color: #fff;
+  background-color: #3971ff;
   cursor: pointer;
   width: 100%;
   display: block;
-  font: inherit;
+  padding: 10px 20px;
+  margin-bottom: 0;
 }
 
 .types .colors__full {

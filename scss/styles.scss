@@ -559,11 +559,14 @@ header{
                 width: 100%;
                 margin-bottom: 30px;
                 .type__image {
-                    width: 90%;
+                    width: 100%;
                     height: 150px;
                     background-color: #3971ff;
                     margin: 0 auto;
                     border-radius: 5px 5px 0 0;
+                }
+                .type__image__first {
+                    width: 90%;
                 }
                 .type__name {
                     background-color: #dbebff;
@@ -577,24 +580,27 @@ header{
                     background-color: #dbebff;
                     width: 90%;
                     margin: 0 auto;
-                    padding: 20px 30px 10px;
-                    .price__heading {
-                        margin-bottom: 10px;
-                    }
-                    .price__value {
-                        font-weight: 600;
-                        color: #3971ff;
-                        margin-bottom: 5px;
+                    .type__text {
+                        padding: 20px;
+                        .price__heading {
+                            margin-bottom: 10px;
+                        }
+                        .price__value {
+                            font-weight: 600;
+                            color: #3971ff;
+                            margin-bottom: 5px;
+                        }
                     }
                 }
                 button {
                     border: none;
                     padding: 0;
-                    background-color: #fff;
+                    background-color: #3971ff;
                     cursor: pointer;
                     width: 100%;
                     display: block;
-                    font: inherit;
+                    padding: 10px 20px;
+                    margin-bottom: 0;
                 }
             }
         }
