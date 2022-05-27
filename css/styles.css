@@ -165,6 +165,10 @@ span {
   padding: 10px 20px;
 }
 
+.special__button:hover {
+  background-color: #5c8aff;
+}
+
 @media screen and (max-width: 769px) {
   .special__button {
     font-size: 15px;
@@ -204,7 +208,7 @@ span {
 
 @media screen and (max-width: 1280px) {
   .benefit__text {
-    max-width: 75%;
+    max-width: 100px;
     margin: 0 auto 20px;
   }
 }
@@ -333,6 +337,15 @@ a {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+.menu .cross__link {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
 .menu .menu__container {
   text-align: center;
   -webkit-box-orient: vertical;
@@ -376,6 +389,8 @@ a {
   display: none;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 3;
+  -webkit-animation: opacity 0.5s ease 0s normal forwards;
+          animation: opacity 0.5s ease 0s normal forwards;
 }
 
 .specialist__form__container .specialist__form__padding {
@@ -416,10 +431,31 @@ a {
   position: absolute;
   right: -5px;
   top: -5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 .specialist__form__container--active {
   display: block;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -468,6 +504,12 @@ header .header__container {
 
 header .header__container .header__logo {
   margin: 20px 0 0 20px;
+}
+
+@media screen and (max-width: 769px) {
+  header .header__container .header__logo {
+    margin-top: 15px;
+  }
 }
 
 header .header__container nav {
@@ -617,7 +659,7 @@ header .header__container .burger__icon {
 }
 
 .specialist .specialist__benefits .benefits__list .benefit .benefit__text {
-  max-width: 120px;
+  max-width: 110px;
   word-wrap: break-word;
 }
 
@@ -693,7 +735,7 @@ header .header__container .burger__icon {
 }
 
 .pros__list__mini .pros__list__first .benefit .benefit__text {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 @media screen and (max-width: 470px) {
@@ -713,7 +755,7 @@ header .header__container .burger__icon {
 }
 
 .types {
-  margin: 100px auto 50px;
+  margin: 100px auto 0;
   text-align: center;
   padding: 0 20px;
 }
@@ -795,6 +837,14 @@ header .header__container .burger__icon {
   margin-bottom: 5px;
 }
 
+.types .types__construction .construction__first .types__construction button {
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
 .types .colors__full {
   display: block;
 }
@@ -820,12 +870,25 @@ header .header__container .burger__icon {
 }
 
 .types .colors__full--mini .colors__list .colors__row .color__item {
-  width: 64px;
+  width: 100px;
+}
+
+@media screen and (max-width: 290px) {
+  .types .colors__full--mini .colors__list .colors__row .color__item {
+    width: 64px;
+  }
 }
 
 .types .colors__full--mini .colors__list .colors__row .color__item .color__image {
-  width: 64px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 290px) {
+  .types .colors__full--mini .colors__list .colors__row .color__item .color__image {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .types .colors__full--mini .colors__list .colors__row .color__item .color__text {
@@ -910,7 +973,7 @@ header .header__container .burger__icon {
 .materials__benefits {
   text-align: left;
   padding: 0 20px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1280px) {
