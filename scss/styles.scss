@@ -716,12 +716,18 @@ header{
         flex-direction: column;
         width: 100%;
     }
-    .materials__text {
+    .materials__text, .materials__text--new{
         width: 55%;
         @media screen and (max-width: 1280px) {
             width: 100%;
             max-width: 600px;
             margin: 0 auto 20px;
+        }
+        h2 {
+            margin-bottom: 12px;
+            @media screen and (max-width: 1280px) {
+                text-align: center;
+            }
         }
         .text__block {
             @extend %df;
@@ -740,6 +746,19 @@ header{
             }
             p {
                 width: 90%;
+                span {
+                    color: #3971ff;
+                    font-size: inherit;
+                }
+                .span__first {
+                    font-weight: 600;
+                    .span__two {
+                        font-size: 24px;
+                        @media screen and (max-width: 769px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -758,8 +777,66 @@ header{
             background-color: #3971ff;
             border-radius: 5px;
             margin-bottom: 20px;
-            
         }
+    }
+    .materials__text--new {
+        display: block;
+        @media screen and (max-width: 1280px) {
+            margin: 0 auto;
+            display: none;
+        }
+    }
+}
+
+.materials--mini {
+    text-align: center;
+    display: none;
+    @media screen and (max-width: 1280px) {
+        display: block;
+    }
+    p {
+        width: 100%;
+        margin-bottom: 20px;
+        span {
+            color: #3971ff;
+            font-size: inherit;
+        }
+        .span__first {
+            font-weight: 600;
+            .span__two {
+                font-size: 24px;
+                @media screen and (max-width: 769px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.materials__pic__second {
+    width: 55%;
+    margin-right: 25px;
+    @media screen and (max-width: 1280px) {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .materials__img__second {
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+        background-color: #3971ff;
+        margin-bottom: 30px;
+    }
+}
+
+.align__left {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 70px;
+    @media screen and (max-width: 1280px) {
+        text-align: center;
+        margin-top: 25px;
     }
 }
 
@@ -856,6 +933,68 @@ footer {
                     &:hover {
                         color: rgb(151, 151, 151);
                     }
+                }
+            }
+        }
+    }
+}
+
+.certificates {
+    margin: 150px auto;
+    h1 {
+        text-align: center;
+    }
+    .certificates__list {
+        width: 100%;
+        @extend %df;
+        padding: 0 20px;
+        @media screen and (max-width: 1280px) {
+            flex-direction: column;
+        }
+        .certificates__unit {
+            width: 32%;
+            height: 450px;
+            background-color: #3971ff;
+            border-radius: 5px;
+            @media screen and (max-width: 1280px) {
+                flex-direction: column;
+                max-width: 600px;
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.contacts-page {
+    margin: 150px auto;
+    padding: 0 20px;
+    h1 {
+        text-align: center;
+    }
+    .contacts-page__list {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+        .contacts-page__column {
+            width: 40%;
+            @media screen and (max-width: 769px) {
+                width: 100%;
+                text-align: center;
+            }
+            .contacts-page__item {
+                margin-bottom: 30px;
+                .contacts-page__heading {
+                    color: #3971ff;
+                }
+                .contacts-page__map {
+                    width: 100%;
+                    height: 275px;
+                    background-color: #3971ff;
+                    border-radius: 5px;
                 }
             }
         }
