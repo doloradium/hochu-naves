@@ -829,6 +829,7 @@ header .header__container .burger__link .burger__icon {
 
 .types .types__construction .construction__first .types__construction .type__image img {
   border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
 .types .types__construction .construction__first .types__construction .type__image__first {
