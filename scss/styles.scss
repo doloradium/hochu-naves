@@ -557,6 +557,26 @@ header{
             }
             @media screen and (max-width: 460px) {
                 flex-direction: column;
+                
+            }
+            .types__construction__new {
+                background-color: #dbebff;
+                width: 45%;
+                margin: 0 auto;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                @media screen and (max-width: 460px) {
+                    width: 100%;
+                }
+                img {
+                    border-radius: 5px 5px 0 0;
+                    @media screen and (max-width: 460px) {
+                        width: 100%;
+                    }
+                }
+                .type__name {
+                    padding: 5px;
+                }
             }
             .types__construction {
                 flex-direction: column;
@@ -576,14 +596,13 @@ header{
                     width: 90%;
                 }
                 .type__name {
-                    background-color: #dbebff;
                     width: 90%;
                     margin: 0 auto;
                     border-radius: 0 0 5px 5px;
-                    padding: 5px 0;
+                    padding: 5px;
                 }
                 .type__name__second {
-                    border-radius: 0;
+                    border-radius: 5px;
                     background-color: #dbebff;
                     width: 90%;
                     margin: 0 auto;
@@ -591,7 +610,10 @@ header{
                         padding: 20px;
                         .price__heading {
                             margin-bottom: 10px;
-                            min-height: 50px;
+                            min-height: 72px;
+                            @media screen and (max-width: 460px) {
+                                min-height: auto;
+                            }
                         }
                         .price__value {
                             font-weight: 600;
@@ -669,6 +691,78 @@ header{
     background-color: #23aeea;
 }
 
+.ral1014 {
+    background-color: #dcc69d;
+}
+
+.ral1018 {
+    background-color: #f6d351;
+}
+
+.ral2004 {
+    background-color: #ed3200;
+}
+
+.ral2010 {
+    background-color: #d84b20;
+}
+
+.ral3003 {
+    background-color: #642425;
+}
+
+.ral3009 {
+    background-color: #642425;
+}
+
+.ral5002 {
+    background-color: #003a6c;
+}
+
+.ral5005 {
+    background-color: #093c8f;
+}
+
+.ral5021 {
+    background-color: #1f6e75;
+}
+
+.ral5024 {
+    background-color: #92b1c3;
+}
+
+.ral6002 {
+    background-color: #184b13;
+}
+
+.ral6005 {
+    background-color: #042615;
+}
+
+.ral6020 {
+    background-color: #213124;
+}
+
+.ral7004 {
+    background-color: #858a8d;
+}
+
+.ral7024 {
+    background-color: #4c4c54;
+}
+
+.ral8017 {
+    background-color: #361206;
+}
+
+.ral9003 {
+    background-color: #f9faf4;
+}
+
+.ral9006 {
+    background-color: #a5aeb7;
+}
+
     .colors__full--mini {
         display: none;
         @media screen and (max-width: 460px) {
@@ -700,7 +794,6 @@ header{
 
     .colors__list {
         @extend %df;
-        margin-bottom: 30px;
         @media screen and (max-width: 1280px) {
             flex-direction: column;
         }
@@ -762,7 +855,6 @@ header{
 .materials__benefits {
     @extend %df;
     text-align: left;
-    padding: 0 20px;
     margin-bottom: 30px;
     @media screen and (max-width: 1280px) {
         flex-direction: column;
@@ -774,6 +866,7 @@ header{
             width: 100%;
             max-width: 600px;
             margin: 0 auto 20px;
+            text-align: center;
         }
         h2 {
             margin-bottom: 12px;
@@ -797,7 +890,7 @@ header{
                 margin-top: 5px;
             }
             p {
-                width: 90%;
+                width: 100%;
                 span {
                     color: #3971ff;
                     font-size: inherit;
@@ -833,12 +926,13 @@ header{
             margin-bottom: 20px;
             img {
                 border-radius: 5px;
+                width: 100%;
             }
         }
     }
     .materials__text--new {
         display: block;
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 520px) {
             margin: 0 auto;
             display: none;
         }
@@ -848,7 +942,7 @@ header{
 .materials--mini {
     text-align: center;
     display: none;
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 520px) {
         display: block;
     }
     p {
@@ -883,6 +977,10 @@ header{
         border-radius: 5px;
         background-color: #3971ff;
         margin-bottom: 30px;
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -1055,4 +1153,167 @@ footer {
             }
         }
     }
+}
+
+/* Форма */
+.calc {}
+
+.calc__article {
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calc__main {}
+
+.calc__form {
+    background-color: #83CCFD;
+    margin-bottom: 100px;
+    padding: 50px 40px;
+}
+
+.calc__type {
+    margin-bottom: 30px;
+}
+
+.calc__legend {}
+
+.calc__radio {
+    background-color: #1a16ed;
+    margin-right: 15px;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.calc__radio:last-child {
+    margin-right: 0;
+}
+
+.calc__radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.calc__radio input:checked+span {
+    color: #444444;
+    transition: color, 0.2s;
+}
+
+.calc__grid {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.calc__grid-item {}
+
+.calc__grid-item label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calc__input {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+.calc__input:focus {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.calc__legend {
+    margin-bottom: 10px;
+}
+
+.calc__submit {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #1a16ed;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.calc__submit:hover,
+.calc__submit:focus {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* Table */
+.calc__table {
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.calc__caption {}
+
+.calc__thead {
+    text-transform: uppercase;
+}
+
+.calc__th {
+    text-align: left;
+}
+
+.calc__tr {
+    border: 1px solid #FFFFFF;
+}
+
+.calc__td {
+    padding: 3px;
+    border: 1px solid #FFFFFF;
+    text-align: left;
+}
+
+.calc__td--right {
+    text-align: right;
+}
+
+.calc__tbody {}
+
+.calc__tfoot {}
+
+.polycarbonate__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/polycarbonate/hero.jpg) center center / cover no-repeat;
+}
+
+.metal-profile__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/metal-profile/hero.png) center center / cover no-repeat;
+}
+
+.monolith__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/monolith/hero.jpg) center center / cover no-repeat;
+}
+
+.soft-roof__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/soft-roof/hero.jpg) center center / cover no-repeat;
+}
+
+.wood__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/wood/hero.jpg) center center / cover no-repeat;
+}
+
+.profile-pipe__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/profile-tube/hero.jpg) center center / cover no-repeat;
+}
+
+.metal-tile__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/metal-tile/hero.jpg) center center / cover no-repeat;
+
+}
+
+.forged__new {
+    background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/forged/hero.png) center center / cover no-repeat;
 }
