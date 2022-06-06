@@ -258,7 +258,7 @@ a {
     z-index: 3;
     animation: opacity 0.5s ease 0s normal forwards;
     .specialist__form__padding {
-        padding: 0 20px;
+        padding: 0 10px;
         .specialist__form {
             opacity: 100%;
             max-width: 400px;
@@ -413,13 +413,14 @@ header{
     margin: 100px auto;
     @media screen and (max-width: 1280px) {
         display: block;
+        padding: 0 20px;
     }
     .specialist__question {
         width: 33%;
         max-width: 550px;
         text-align: right;
         margin-right: 40px;
-        margin-top: 8%;
+        margin-top: 75px;
         @media screen and (max-width: 1280px) {
             width: 80%;
             text-align: center;
@@ -435,7 +436,7 @@ header{
         border-radius: 5px;
         font-size: 18px;
         @media screen and (max-width: 1280px) {
-            width: 80%;
+            width: 100%;
             margin: 0 auto 50px;
         }
         p {
@@ -446,8 +447,11 @@ header{
     .specialist__benefits {
         width: 33%;
         margin-left: 40px;
-        margin-top: 10%;
+        margin-top: 85px;
         text-align: center;
+        h2 {
+            margin-bottom: 15px;
+        }
         .benefits__list {
             @extend %df;
             margin: 0 auto;
@@ -538,7 +542,6 @@ header{
 .types {
     margin: 100px auto 0;
     text-align: center;
-    padding: 0 20px; 
     h2 {
         margin-bottom: 40px
     }
@@ -554,10 +557,11 @@ header{
             @media screen and (max-width: 1280px) {
                 max-width: 600px;
                 width: 100%;
+                padding: 0 10px;
             }
             @media screen and (max-width: 460px) {
-                flex-direction: column;
-                
+                flex-direction: column;   
+                padding: 0;             
             }
             .types__construction__new {
                 background-color: #dbebff;
@@ -566,7 +570,7 @@ header{
                 border-radius: 5px;
                 margin-bottom: 40px;
                 @media screen and (max-width: 460px) {
-                    width: 100%;
+                    width: 90%;
                 }
                 img {
                     border-radius: 5px 5px 0 0;
@@ -798,7 +802,7 @@ header{
             flex-direction: column;
         }
         .colors__row {
-            padding: 0 20px;
+            padding: 0 25px;
             @extend %df;
             width: 47.5%;
             @media screen and (max-width: 1280px) {
@@ -855,10 +859,12 @@ header{
 .materials__benefits {
     @extend %df;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding: 0 30px;
     @media screen and (max-width: 1280px) {
         flex-direction: column;
         width: 100%;
+        padding: 0 20px;
     }
     .materials__text, .materials__text--new{
         width: 55%;
@@ -866,7 +872,7 @@ header{
             width: 100%;
             max-width: 600px;
             margin: 0 auto 20px;
-            text-align: center;
+            text-align: left;
         }
         h2 {
             margin-bottom: 12px;
@@ -887,7 +893,7 @@ header{
                 font-size: 32px;
                 text-align: center;
                 margin-right: 20px;
-                margin-top: 5px;
+                margin-top: 2px;
             }
             p {
                 width: 100%;
@@ -936,6 +942,12 @@ header{
             margin: 0 auto;
             display: none;
         }
+    }
+}
+
+.materials__text--new {
+    @media screen and (max-width: 1280px) {
+        text-align: center;
     }
 }
 
@@ -995,7 +1007,7 @@ header{
 }
 
 .phone {
-    padding: 0 40px;
+    padding: 0 20px;
     margin-bottom: 100px;
     h1 {
         text-align: center;
@@ -1311,7 +1323,6 @@ footer {
 
 .metal-tile__new {
     background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/metal-tile/hero.jpg) center center / cover no-repeat;
-
 }
 
 .forged__new {

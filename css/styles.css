@@ -391,7 +391,7 @@ a {
 }
 
 .specialist__form__container .specialist__form__padding {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .specialist__form__container .specialist__form__padding .specialist__form {
@@ -602,6 +602,7 @@ header .header__container .burger__link .burger__icon {
 @media screen and (max-width: 1280px) {
   .specialist {
     display: block;
+    padding: 0 20px;
   }
 }
 
@@ -610,7 +611,7 @@ header .header__container .burger__link .burger__icon {
   max-width: 550px;
   text-align: right;
   margin-right: 40px;
-  margin-top: 8%;
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -633,7 +634,7 @@ header .header__container .burger__link .burger__icon {
 
 @media screen and (max-width: 1280px) {
   .specialist .specialist__form {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 50px;
   }
 }
@@ -646,8 +647,12 @@ header .header__container .burger__link .burger__icon {
 .specialist .specialist__benefits {
   width: 33%;
   margin-left: 40px;
-  margin-top: 10%;
+  margin-top: 85px;
   text-align: center;
+}
+
+.specialist .specialist__benefits h2 {
+  margin-bottom: 15px;
 }
 
 .specialist .specialist__benefits .benefits__list {
@@ -774,7 +779,6 @@ header .header__container .burger__link .burger__icon {
 .types {
   margin: 100px auto 0;
   text-align: center;
-  padding: 0 20px;
 }
 
 .types h2 {
@@ -799,6 +803,7 @@ header .header__container .burger__link .burger__icon {
   .types .types__construction .construction__first {
     max-width: 600px;
     width: 100%;
+    padding: 0 10px;
   }
 }
 
@@ -808,6 +813,7 @@ header .header__container .burger__link .burger__icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -821,7 +827,7 @@ header .header__container .burger__link .burger__icon {
 
 @media screen and (max-width: 460px) {
   .types .types__construction .construction__first .types__construction__new {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1090,7 +1096,7 @@ header .header__container .burger__link .burger__icon {
 }
 
 .types .colors__list .colors__row {
-  padding: 0 20px;
+  padding: 0 25px;
   width: 47.5%;
 }
 
@@ -1152,7 +1158,8 @@ header .header__container .burger__link .burger__icon {
 
 .materials__benefits {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  padding: 0 30px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1162,6 +1169,7 @@ header .header__container .burger__link .burger__icon {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -1174,7 +1182,7 @@ header .header__container .burger__link .burger__icon {
     width: 100%;
     max-width: 600px;
     margin: 0 auto 20px;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1202,7 +1210,7 @@ header .header__container .burger__link .burger__icon {
   font-size: 32px;
   text-align: center;
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .materials__benefits .materials__text .text__block p, .materials__benefits .materials__text--new .text__block p {
@@ -1265,6 +1273,12 @@ header .header__container .burger__link .burger__icon {
   .materials__benefits .materials__text--new {
     margin: 0 auto;
     display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .materials__text--new {
+    text-align: center;
   }
 }
 
@@ -1342,7 +1356,7 @@ header .header__container .burger__link .burger__icon {
 }
 
 .phone {
-  padding: 0 40px;
+  padding: 0 20px;
   margin-bottom: 100px;
 }
 
