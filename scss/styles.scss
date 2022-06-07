@@ -1168,7 +1168,10 @@ footer {
 }
 
 /* Форма */
-.calc {}
+.calc__main {
+    margin-top: 100px;
+    padding: 0 20px;
+}
 
 .calc__article {
     padding: 0 15px;
@@ -1179,31 +1182,65 @@ footer {
     margin-bottom: 30px;
 }
 
-.calc__main {}
-
 .calc__form {
-    background-color: #83CCFD;
+    background-color: #dbebff;
     margin-bottom: 100px;
-    padding: 50px 40px;
+    padding: 30px;
+    border-radius: 5px;
 }
 
 .calc__type {
-    margin-bottom: 30px;
+    margin: 0 auto 40px;
+    border: none;
+    max-width: 630px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.calc__legend {}
 
 .calc__radio {
-    background-color: #1a16ed;
-    margin-right: 15px;
-    border-radius: 4px;
-    padding: 5px 15px;
-    color: #FFFFFF;
+    border-radius: 5px;
+    color: #000;
     text-transform: uppercase;
+    padding: 5px 10px;
+    flex-basis: 1%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 auto;
+    @media screen and (max-width: 740px) {
+        flex-basis: 40%;
+    }
+    @media screen and (max-width: 600px) {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
 
-.calc__radio:last-child {
-    margin-right: 0;
+.calc__block {
+    margin-bottom: 40px;
+}
+
+.calc__flock {
+    display: block;
+    @media screen and (max-width: 600px) {
+        display: flex;
+        margin-bottom: -20px;
+    }
+    @media screen and (max-width: 490px) {
+        display: block;
+    }
+}
+
+.farm {
+    margin-top: -30px;
+}
+
+.calc__legend h2 {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.calc__radio span {
+    font-size: 16px;
 }
 
 .calc__radio input {
@@ -1212,33 +1249,53 @@ footer {
 }
 
 .calc__radio input:checked+span {
-    color: #444444;
+    background-color: #3971ff;
+    color: #fff;
+    border-radius: 5px;
     transition: color, 0.2s;
+    padding: 5px 10px;
+    font-weight: 600;
+    outline: none;
 }
 
 .calc__grid {
-    display: grid;
-    grid-template: 1fr 1fr / repeat(4, 1fr);
-    row-gap: 30px;
-    margin-bottom: 50px;
+    @extend %df;
+    margin: 0 auto;
+    max-width: 1000px;
+    @media screen and (max-width: 1280px) {
+        flex-wrap: wrap;
+    }
 }
 
-.calc__grid-item {}
+.calc__beam {
+    @extend %df;
+    max-width: fit-content;
+    margin: 0 auto;
+}
 
-.calc__grid-item label {
+.calc__grid-item  {
+        flex-basis: 23%;
+        margin-bottom: 20px;
+        @media screen and (max-width: 960px) {
+            flex-basis: 48%;
+        }
+        @media screen and (max-width: 520px) {
+            flex-basis: 100%;
+        }
+}
+
+.calc__grid-three {
+    flex-basis: 31.5%;
+    @media screen and (max-width: 650px) {
+        flex-basis: 100%;
+    }
+}
+
+.calc__grid-item label, .calc__grid-three label {
     display: block;
     margin-bottom: 10px;
-}
-
-.calc__input {
-    font-size: 12px;
-    padding: 5px 10px;
-    width: 200px;
-}
-
-.calc__input:focus {
-    transform: scale(1.1);
-    transition: transform 0.2s;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .calc__legend {
@@ -1247,20 +1304,19 @@ footer {
 
 .calc__submit {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     text-transform: uppercase;
-    background-color: #1a16ed;
-    padding: 5px 15px;
-    font-weight: 700;
-    color: #FFFFFF;
-    border-radius: 4px;
-    transition: transform 0.2s;
+    background-color: #3971ff;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
 }
 
-.calc__submit:hover,
-.calc__submit:focus {
-    transform: scale(1.1);
-    transition: transform 0.2s;
+.calc__submit:hover {
+    background-color: #5c8aff;
+    transition: 0.5s;
 }
 
 /* Table */
@@ -1268,8 +1324,6 @@ footer {
     width: 100%;
     padding-bottom: 200px;
 }
-
-.calc__caption {}
 
 .calc__thead {
     text-transform: uppercase;
@@ -1292,10 +1346,6 @@ footer {
 .calc__td--right {
     text-align: right;
 }
-
-.calc__tbody {}
-
-.calc__tfoot {}
 
 .polycarbonate__new {
     background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/polycarbonate/hero.jpg) center center / cover no-repeat;
@@ -1327,4 +1377,11 @@ footer {
 
 .forged__new {
     background: linear-gradient(360deg, rgb(18, 27, 37), rgba(0, 0, 0, 0.378)), url(../img/forged/hero.png) center center / cover no-repeat;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    outline: none;
+    border: none;
+    margin: 5px 10px 5px 0;
 }
