@@ -58,6 +58,7 @@
     </header>
     <main class="calc__main wrapper">
         <div class="container">
+            <h1>Калькулятор стоимости</h1>
             <form class="calc__form" name="calc" onsubmit="return false;">
                 <div class="calc__block calc__flock">
                     <div class="calc__container">
@@ -118,25 +119,25 @@
                     <div class="calc__grid">
                         <div class="calc__grid-item">
                             <label for="width">Ширина навеса, м</label>
-                            <input class="calc__input input" id="width" name="width" type="number"
+                            <input class="calc__input input" id="widthOfCover" name="widthOfCover" type="number"
                                 placeholder="Введите значение.." step="0.1" min="2" max="10" tabindex="1" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Длина навеса, м</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="lengthofCover" name="lengthOfCover" type="number"
                                 placeholder="Введите значение.." step="0.1" min="2" max="20" tabindex="3" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Высота фермы, мм</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="heightOfFarms" name="heightOfFarms" type="number"
                                 placeholder="Введите значение.." step="1" min="200" max="2000" tabindex="3" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Шаг лагов, мм</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="stepOfLags" name="stepOfLags" type="number"
                                 placeholder="Введите значение.." step="1" min="300" max="2000" tabindex="3" required>
                         </div>
                     </div>
@@ -144,67 +145,125 @@
                     <div class="calc__grid">
                         <div class="calc__grid-item">
                             <label for="length">Высота столбов, м</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="heightOfBeams" name="heightOfBeams" type="number"
                                 placeholder="Введите значение.." step="0.1" min="2" max="3.5" tabindex="3" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Выгнутость арки, м</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="convexityofArch" name="convexityofArch" type="number"
                                 placeholder="Введите значение.." step="0.01" min="0.15" max="0.5" tabindex="3" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Шаг столбов, м</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="stepOfBeams" name="stepOfBeams" type="number"
                                 placeholder="Введите значение.." step="0.1" min="1" max="10" tabindex="3" required>
                         </div>
 
                         <div class="calc__grid-item">
                             <label for="length">Шаг ферм, мм</label>
-                            <input class="calc__input input" id="length" name="length" type="number"
+                            <input class="calc__input input" id="stepOfFarms" name="stepOfFarms" type="number"
                                 placeholder="Введите значение.." step="0.1" min="1" max="10" tabindex="3" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="calc__block">
-                    <legend class="calc__legend farm"><h2>Фермы</h2></legend>
+                    <legend class="calc__legend farm"><h2>Фермы и столбы</h2></legend>
 
                     <div class="calc__grid">
-                        <div class="calc__grid-three">
+                        <div class="calc__grid-item">
                             <label for="size">Толщина лагов</label>
-                            <select class="input" id="sizeOfColumn" name="sizeOfColumn" tabindex="5" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="8*8">8 * 8 см</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="thicknessOfLags" name="thicknessOfLags" tabindex="5" required>
+                                <option value="">Выбрать</option>
+                                <option value="40*20*15">40 × 20 × 1.5 мм</option>
+                                <option value="40*20*2">40 × 20 × 2 мм</option>
+                                <option value="40*20*3">40 × 20 × 3 мм</option>
+                                <option value="40*40*15">40 × 40 × 1.5 мм</option>
+                                <option value="40*40*2">40 × 40 × 2 мм</option>
+                                <option value="40*40*3">40 × 40 × 3 мм</option>
+                                <option value="40*40*4">40 × 40 × 4 мм</option>
+                                <option value="60*40*3">60 × 40 × 3 мм</option>
+                                <option value="60*60*3">60 × 60 × 3 мм</option>
+                                <option value="80*40*2">80 × 40 × 2 мм</option>
+                                <option value="80*40*3">80 × 40 × 3 мм</option>
+                                <option value="80*60*3">80 × 60 × 4 мм</option>
+                                <option value="80*60*2">80 × 60 × 2 мм</option>
+                                <option value="80*60*3">80 × 60 × 3 мм</option>
+                                <option value="80*60*4">80 × 60 × 4 мм</option>
+                                <option value="80*60*3">80 × 80 × 2.5 мм</option>
+                                <option value="80*60*4">80 × 80 × 3 мм</option>
                             </select>
                         </div>
 
-                        <div class="calc__grid-three">
+                        <div class="calc__grid-item">
                             <label for="size">Толщина рёбер</label>
-                            <select class="input" id="sizeOfColumn" name="sizeOfColumn" tabindex="5" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="8*8">8 * 8 см</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="thicknessOfEdges" name="thicknessOfEdges" tabindex="5" required>
+                                <option value="">Выбрать</option>
+                                <option value="40*20*15">40 × 20 × 1.5 мм</option>
+                                <option value="40*20*2">40 × 20 × 2 мм</option>
+                                <option value="40*20*3">40 × 20 × 3 мм</option>
+                                <option value="40*40*15">40 × 40 × 1.5 мм</option>
+                                <option value="40*40*2">40 × 40 × 2 мм</option>
+                                <option value="40*40*3">40 × 40 × 3 мм</option>
+                                <option value="40*40*4">40 × 40 × 4 мм</option>
+                                <option value="60*40*3">60 × 40 × 3 мм</option>
+                                <option value="60*60*3">60 × 60 × 3 мм</option>
+                                <option value="80*40*2">80 × 40 × 2 мм</option>
+                                <option value="80*40*3">80 × 40 × 3 мм</option>
+                                <option value="80*60*3">80 × 60 × 4 мм</option>
+                                <option value="80*60*2">80 × 60 × 2 мм</option>
+                                <option value="80*60*3">80 × 60 × 3 мм</option>
+                                <option value="80*60*4">80 × 60 × 4 мм</option>
+                                <option value="80*60*3">80 × 80 × 2.5 мм</option>
+                                <option value="80*60*4">80 × 80 × 3 мм</option>
                             </select>
                         </div>
 
-                        <div class="calc__grid-three">
+                        <div class="calc__grid-item">
                             <label for="size">Толщина рамы</label>
-                            <select class="input" id="sizeOfColumn" name="sizeOfColumn" tabindex="5" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="8*8">8 * 8 см</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="thicknessOfFrame" name="thicknessOfFrame" tabindex="5" required>
+                                <option value="">Выбрать</option>
+                                <option value="40*20*15">40 × 20 × 1.5 мм</option>
+                                <option value="40*20*2">40 × 20 × 2 мм</option>
+                                <option value="40*20*3">40 × 20 × 3 мм</option>
+                                <option value="40*40*15">40 × 40 × 1.5 мм</option>
+                                <option value="40*40*2">40 × 40 × 2 мм</option>
+                                <option value="40*40*3">40 × 40 × 3 мм</option>
+                                <option value="40*40*4">40 × 40 × 4 мм</option>
+                                <option value="60*40*3">60 × 40 × 3 мм</option>
+                                <option value="60*60*3">60 × 60 × 3 мм</option>
+                                <option value="80*40*2">80 × 40 × 2 мм</option>
+                                <option value="80*40*3">80 × 40 × 3 мм</option>
+                                <option value="80*60*3">80 × 60 × 4 мм</option>
+                                <option value="80*60*2">80 × 60 × 2 мм</option>
+                                <option value="80*60*3">80 × 60 × 3 мм</option>
+                                <option value="80*60*4">80 × 60 × 4 мм</option>
+                                <option value="80*60*3">80 × 80 × 2.5 мм</option>
+                                <option value="80*60*4">80 × 80 × 3 мм</option>
+                            </select>
+                        </div>
+
+                        <div class="calc__grid-item">
+                            <label for="size">Размер столбов</label>
+                            <select class="input" id="sizeOfBeams" name="sizeOfBeams" tabindex="5" required>
+                                <option value="">Выбрать</option>
+                                <option value="60*60*3">60 × 60 × 3 мм</option>
+                                <option value="60*60*4">60 × 60 × 4 мм</option>
+                                <option value="80*80*25">80 × 80 × 2.5 мм</option>
+                                <option value="80*80*3">80 × 80 × 3 мм</option>
+                                <option value="80*80*4">80 × 80 × 4 мм</option>
+                                <option value="100*100*3">100 × 100 × 3 мм</option>
+                                <option value="100*100*4">100 × 100 × 4 мм</option>
+                                <option value="120*120*3">120 × 120 × 3 мм</option>
+                                <option value="120*120*4">120 × 120 × 4 мм</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="calc__beam">
-                        <input type="checkbox" name="typeOfFerm" value="Усиленные основания">
+                        <input type="checkbox" name="reinforced" value="Усиленные основания">
                         <label for="size">Усиленные основания</label>
                     </div>
                 </div>
@@ -215,32 +274,41 @@
                     <div class="calc__grid">
                         <div class="calc__grid-three">
                             <label for="color">Материал</label>
-                            <select class="input" id="color" name="colorOfFrame" tabindex="7" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="RAL 9005">Черный (RAL 9005)</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="material" name="material" tabindex="7" required>
+                                <option value="">Выбрать</option>
+                                <option value="hex">Сотовый поликарбонат</option>
+                                <option value="mono">Монолитный поликарбонат</option>
                             </select>
                         </div>
 
                         <div class="calc__grid-three">
                             <label for="carbon">Параметры</label>
-                            <select class="input" id="colorOfPolycarbon" name="colorOfPolycarbon" tabindex="6"
+                            <select class="input" id="parameters" name="parameters" tabindex="6"
                                 required>
-                                <option value="">-- Выбрать</option>
-                                <option value="Янтарь">Янтарь</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="">Выбрать</option>
+                                <option value="4*42">Стандарт 4мм, 4.2 кг/м²</option>
+                                <option value="4*48">Премиум 4мм, 4.8 кг/м²</option>
+                                <option value="6*66">Стандарт 6мм, 6.6 кг/м²</option>
+                                <option value="6*72">Премиум 6мм, 7.2 кг/м²</option>
                             </select>
                         </div>
 
                         <div class="calc__grid-three">
                             <label>Цвет</label>
-                            <select class="input" id="setup" for="id" name="setup" tabindex="8" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="На бетонное основание">На бетонное основание</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="colorOfCover" for="id" name="colorOfCover" tabindex="8" required>
+                                <option value="">Выбрать</option>
+                                <option value="bronze">Бронза серый</option>
+                                <option value="brown">Коричневый</option>
+                                <option value="red">Красный</option>
+                                <option value="transparent">Прозрачный</option>
+                                <option value="white">Белый</option>
+                                <option value="turquoise">Бирюзовый</option>
+                                <option value="green">Зелёный</option>
+                                <option value="blue">Синий</option>
+                                <option value="yellow">Желтый</option>
+                                <option value="ember">Янтарный</option>
+                                <option value="emerald">Изумрудный</option>
+                                <option value="pomegranate">Гранатовый</option>
                             </select>
                         </div>
                     </div>
@@ -252,32 +320,40 @@
                     <div class="calc__grid">
                         <div class="calc__grid-three">
                             <label for="color">Цвет конструкции</label>
-                            <select class="input" id="color" name="colorOfFrame" tabindex="7" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="RAL 9005">Черный (RAL 9005)</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                            <select class="input" id="colorOfConstruction" name="colorOfConstruction" tabindex="7" required>
+                                <option value="">Выбрать</option>
+                                <option value="ral8017">Шоколадный (RAL 8017)</option>
+                                <option value="ral9005">Черный (RAL 9005)</option>
+                                <option value="ral7040">Серый (RAL 7040)</option>
+                                <option value="ral9010">Белый (RAL 9010)</option>
+                                <option value="ral1036">Золотистый (RAL 1036)</option>
+                                <option value="ral9006">Серебряный (RAL 9006)</option>
+                                <option value="ral1015">Слоновая кость (RAL 1015)</option>
+                                <option value="ral1021">Желтый (RAL 1021)</option>
+                                <option value="ral3000">Красный (RAL 3000)</option>
+                                <option value="ral3005">Вишневый (RAL 3005)</option>
+                                <option value="ral8011">Темно-коричневый (RAL 8011)</option>
+                                <option value="ral6005">Зеленый (RAL 6005)</option>
+                                <option value="ral5010">Синий (RAL 5010)</option>
                             </select>
                         </div>
 
                         <div class="calc__grid-three">
-                            <label for="carbon">Параметры</label>
-                            <select class="input" id="colorOfPolycarbon" name="colorOfPolycarbon" tabindex="6"
+                            <label for="carbon">Краска</label>
+                            <select class="input" id="paint" name="paint" tabindex="6"
                                 required>
-                                <option value="">-- Выбрать</option>
-                                <option value="Янтарь">Янтарь</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="">Выбрать</option>
+                                <option value="slaven">Грунт-эмаль Slaven 3 в 1</option>
+                                <option value="hammerite">Грунт-эмаль Hammerite Total</option>
                             </select>
                         </div>
 
                         <div class="calc__grid-three">
                             <label>Установка</label>
                             <select class="input" id="setup" for="id" name="setup" tabindex="8" required>
-                                <option value="">-- Выбрать</option>
-                                <option value="На бетонное основание">На бетонное основание</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="">Выбрать</option>
+                                <option value="concrete-ready">На бетонное основание</option>
+                                <option value="concrete-unready">Бетонирование столбов</option>
                             </select>
                         </div>
                     </div>
@@ -287,7 +363,7 @@
             </form>
 
             <table class="calc__table">
-                <caption class="calc__caption">Название таблицы</caption>
+                <caption class="calc__caption"><h1>СМЕТА</h1></caption>
                 <thead class="calc__thead">
                     <tr class="calc__tr">
                         <th class="calc__th">№</th>
