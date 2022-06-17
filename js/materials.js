@@ -1,31 +1,8 @@
-(function() {
-
-    const elem = document.querySelector('.materials__benefits__list');
-    const iso = new Isotope(elem, {
-    itemSelector: ".materials__benefits",
-    filter: '.polycarbonate'
+$(document).ready(function() {
+   $('.material').click(function() {
+      $('.material').removeClass('material__active');
+      $(this).addClass('material__active');
+   });
+   var filterizd = $('.filtr-container').filterizr();
+   filterizd.filterizr();
 });
-
-    const controls = document.querySelectorAll('.material__link');
-    const activeClass = 'material__active';
-
-    controls.forEach(function(control) {
-
-        control.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const filterName = control.getAttribute("data-filter");
-
-            controls.forEach(function(link){
-                link.closest('.material').classList.remove(activeClass);
-            })
-
-            control.closest('.material').classList.add(activeClass);
-            iso.arrange({
-                filter: `.${filterName}`
-            })
-        });
-
-    });
-
-}())
