@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Хочу навес</title>
 </head>
 <body>
@@ -89,44 +90,264 @@
             </div>
         </div>
     </section>
-    <section class="specialist wrapper">
-        <div class="specialist__question">
-            <h2>Не знаете, какой навес вам нужен?</h2>
-            <p>Закажите звонок от специалиста, который поможет вам определиться с выбором и предложит конструкцию навеса. Это полностью бесплатно  </p>
-        </div>
-        <div class="specialist__form">
-            <div class="instruction">Введите имя</div>
-            <input type="text" placeholder="Ваше имя" class="input">
-            <div class="instruction">Введите номер телефона</div>
-            <input type="number" placeholder="8 (***) *** **-**" class="input">
-            <div class="btn__link">
-                <a href="#" class="special__button">Заказать звонок</a>
+    <section class="types wrapper">
+        <div class="materials__pros">
+            <h2>Преимущества навесов из разных материалов</h2>
+            <div class="nav--materials filterizr-control">
+                <ul class="materials__list filterizr-filter">
+                    <li data-filter="1" class="material material__active">
+                        Поликарбонат
+                    </li>
+                    <li data-filter="2" class="material">
+                        Металлопрофиль
+                    </li>
+                    <li data-filter="3" class="material">
+                        Монолит
+                    </li>
+                    <li data-filter="4" class="material">
+                        Мягкая кровля
+                    </li>
+                    <li data-filter="5" class="material">
+                        Дерево
+                    </li>
+                    <li data-filter="6" class="material">
+                        Профильная труба
+                    </li>
+                    <li data-filter="7" class="material">
+                        Металлочерепица
+                    </li>
+                    <li data-filter="8" class="material">
+                        Ковка
+                    </li>
+                </ul>
             </div>
-            <p class="btn__p">Нажимая на кнопку, вы принимаете <a href="privacy-policy.html">Политику конфиденциальности</a></p>
-        </div>
-        <div class="specialist__benefits">
-            <h2>Специалист определит</h2>
-            <div class="benefits__list">
-                <div class="benefit">
-                    <div class="icon icon1">
-                        <img src="img/brush.png" alt="brush">
+            <div class="materials__benefits__list filtr-container">
+                <div data-category="1" class="materials__benefits polycarbonate filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Поликарбонат - прочный, лёгкий и доступный материал. Установка также обойдётся недорого - возведение фундамента не требуется</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Материал отлично пропускает свет. Под навесом днём будет светло. При этом, поликарбонат не пропускает ультрафиолетовые лучи и защищает от жары</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Разнообразие расцветок позволяет выбрать нужный оттенок. Ознакомьтесь с доступными цветами покрытий на нашем сайте</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Поликарбонат - гибкий материал. Легко принимает форму дуги. Подойдёт для строительства арочного и полуарочного навесов</p>
+                        </div>
                     </div>
-                    <div class="benefit__text">Цвет кровли и стоек</div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/pol2.jpg" alt="polycarbonate">
+                        </div>
+                        <a href="polycarbonate.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
                 </div>
-                <div class="benefit">
-                    <div class="icon icon2">
-                        <img src="img/roof.png" alt="roof">
+                <div data-category="2" class="materials__benefits metal-profile filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Металлопрофиль - доступный и качественный материал. Навес обойдется недорого и прослужит много лет</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Материал устойчив к воспламенению и имеет высокий огнеупорный уровень</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Плотная структура металлопрофиля позволяет материалу устойчиво реагировать на изменение температуры. Навесы не промерзают и не трескаются</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Большое разнообразие расцветок. При этом металлопрофиль не выгорает на солнце и сохраняет насыщенность цвета долгое время</p>
+                        </div>
                     </div>
-                    <div class="benefit__text">Материалы кровли</div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/met-prof2.jpg" alt="met-prof">
+                        </div>
+                        <a href="metal-profile.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
                 </div>
-                <div class="benefit">
-                    <div class="icon icon3">
-                        <img src="img/ruler.png" alt="ruler">
+                <div data-category="3" class="materials__benefits monolith filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Монолитные навесы намного прочнее, чем конструкции из других материалов</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Долгое время сохраняет привлекательный внешний вид, не требуя замены или ремонта</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Материал устойчив к любым погодным изменениям, защищает от солнечных лучей</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Пропускает большое количество света. Подходит для административных зданий</p>
+                        </div>
                     </div>
-                    <div class="benefit__text">Форму и размер</div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/mon2.jpg" alt="monolith">
+                        </div>
+                        <a href="monolith.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="4" class="materials__benefits soft-roof filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Мягкая кровля считается “тихим” материалом, отлично приглушающим шум дождя. Во время ветреной погоды также будет тихо - никакого дребезжания металла</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Эстетичный внешний вид. Гибкость черепицы позволяет реализовывать любые дизайнерские задумки</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Навесы из мягкой кровли защищают от осадков и ветра, так как полностью герметичны</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Конструкции из мягкой кровли служат много лет и стоят недорого относительно навесов из других материалов</p>
+                        </div>
+                    </div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/soft2.jpg" alt="soft">
+                        </div>
+                        <a href="soft-roof.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="5" class="materials__benefits wood filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Привлекательный внешний вид навеса. Дерево - натуральный и экологичный материал, выглядит дорого и добротно</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Удобство монтажа и обработки материала. Дерево легко пилится и крепится, не требует использования сложного оборудования</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Возможно реализовать любую архитектурную задумку, сделать арочный или прямой навес</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Легкий вес пиломатериалов и простота в транспортировке</p>
+                        </div>
+                    </div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/wood2.jpg" alt="wood">
+                        </div>
+                        <a href="wood.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="6" class="materials__benefits profile-pipe filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Навесы из профильной трубы быстро и легко собираются. Достаточно нескольких дней, чтобы конструкция была готова</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>Из профильной трубы можно построить арочные и прямые навесы. Также можно реализовать элементы декора</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Профильная труба используется при строительстве навесов любого масштаба - от небольших конструкций до масштабных проектов</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Материал имеет малый вес, а монтаж не требует фундаментных работ. Это значительно экономит время</p>
+                        </div>
+                    </div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/tube2.jpg" alt="tube">
+                        </div>
+                        <a href="profile-pipe.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="7" class="materials__benefits metal-tile filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Навесы из металлочерепицы прочны, долговечны и просты в обслуживании</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>На конструкциях не образуются плесень, грибки и мох. Загрязнения легко смываются с поверхности водой</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Материал имеет разнообразную цветовую гамму. Цвет сохраняет насыщенность долгое время</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Навесы устойчивы к погодным изменениям и не боятся дождя, снега, ветра, не пропускают ультрафиолетовые лучи</p>
+                        </div>
+                    </div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/met-tile2.jpg" alt="met-tile">
+                        </div>
+                        <a href="metal-tile.html">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="8" class="materials__benefits forging filtr filtr-item">
+                    <div class="materials__text">
+                        <div class="text__block">
+                            <div class="text__number">1</div>
+                            <p>Кованые элементы сочетаются с любым видом материала для навеса, при этом эстетично дополняют внешний вид навеса</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">2</div>
+                            <p>С помощью кованых элементов можно реализовать эксклюзивный дизайн навеса</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">3</div>
+                            <p>Плотная структура материала ковки не поддается повреждениям и устойчива к погодным изменениям</p>
+                        </div>
+                        <div class="text__block">
+                            <div class="text__number">4</div>
+                            <p>Кованый навес подойдет для частных, общественных и коммерческих территорий</p>
+                        </div>
+                    </div>
+                    <div class="materials__pic">
+                        <div class="materials__img">
+                            <img src="img/index/forg2.jpg" alt="forged">
+                        </div>
+                        <a href="forging">
+                            <div class="btn btn_blue">Подробнее</div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </section>
     <section class="pros">
         <div class="pros__container wrapper">
@@ -215,6 +436,45 @@
                         </div>
                         <div class="benefit__text white">Гарантия 5 лет</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="specialist wrapper">
+        <div class="specialist__question">
+            <h2>Не знаете, какой навес вам нужен?</h2>
+            <p>Закажите звонок от специалиста, который поможет вам определиться с выбором и предложит конструкцию навеса. Это полностью бесплатно  </p>
+        </div>
+        <div class="specialist__form">
+            <div class="instruction">Введите имя</div>
+            <input type="text" placeholder="Ваше имя" class="input">
+            <div class="instruction">Введите номер телефона</div>
+            <input type="number" placeholder="8 (***) *** **-**" class="input">
+            <div class="btn__link">
+                <a href="#" class="special__button">Заказать звонок</a>
+            </div>
+            <p class="btn__p">Нажимая на кнопку, вы принимаете <a href="privacy-policy.html">Политику конфиденциальности</a></p>
+        </div>
+        <div class="specialist__benefits">
+            <h2>Специалист определит</h2>
+            <div class="benefits__list">
+                <div class="benefit">
+                    <div class="icon icon1">
+                        <img src="img/brush.png" alt="brush">
+                    </div>
+                    <div class="benefit__text">Цвет кровли и стоек</div>
+                </div>
+                <div class="benefit">
+                    <div class="icon icon2">
+                        <img src="img/roof.png" alt="roof">
+                    </div>
+                    <div class="benefit__text">Материалы кровли</div>
+                </div>
+                <div class="benefit">
+                    <div class="icon icon3">
+                        <img src="img/ruler.png" alt="ruler">
+                    </div>
+                    <div class="benefit__text">Форму и размер</div>
                 </div>
             </div>
         </div>
@@ -522,263 +782,6 @@
                 </div>
             </div>
         </div>
-        <div class="materials__pros">
-            <h2>Преимущества навесов из разных материалов</h2>
-            <div class="nav--materials">
-                <ul class="materials__list">
-                    <li class="material material__active">
-                        <a href="#" data-filter="polycarbonate" class="material__link">Поликарбонат</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="metal-profile" class="material__link">Металлопрофиль</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="monolith" class="material__link">Монолит</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="soft-roof" class="material__link">Мягкая кровля</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="wood" class="material__link">Дерево</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="profile-pipe" class="material__link">Профильная труба</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="metal-tile" class="material__link">Металлочерепица</a>
-                    </li>
-                    <li class="material">
-                        <a href="#" data-filter="forging" class="material__link">Ковка</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="materials__benefits__list">
-                <div class="materials__benefits polycarbonate">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Поликарбонат - прочный, лёгкий и доступный материал. Установка также обойдётся недорого - возведение фундамента не требуется</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Материал отлично пропускает свет. Под навесом днём будет светло. При этом, поликарбонат не пропускает ультрафиолетовые лучи и защищает от жары</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Разнообразие расцветок позволяет выбрать нужный оттенок. Ознакомьтесь с доступными цветами покрытий на нашем сайте</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Поликарбонат - гибкий материал. Легко принимает форму дуги. Подойдёт для строительства арочного и полуарочного навесов</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/pol2.jpg" alt="polycarbonate">
-                        </div>
-                        <a href="polycarbonate.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits metal-profile">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Металлопрофиль - доступный и качественный материал. Навес обойдется недорого и прослужит много лет</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Материал устойчив к воспламенению и имеет высокий огнеупорный уровень</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Плотная структура металлопрофиля позволяет материалу устойчиво реагировать на изменение температуры. Навесы не промерзают и не трескаются</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Большое разнообразие расцветок. При этом металлопрофиль не выгорает на солнце и сохраняет насыщенность цвета долгое время</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/met-prof2.jpg" alt="met-prof">
-                        </div>
-                        <a href="metal-profile.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits monolith">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Монолитные навесы намного прочнее, чем конструкции из других материалов</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Долгое время сохраняет привлекательный внешний вид, не требуя замены или ремонта</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Материал устойчив к любым погодным изменениям, защищает от солнечных лучей</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Пропускает большое количество света. Подходит для административных зданий</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/mon2.jpg" alt="monolith">
-                        </div>
-                        <a href="monolith.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits soft-roof">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Мягкая кровля считается “тихим” материалом, отлично приглушающим шум дождя. Во время ветреной погоды также будет тихо - никакого дребезжания металла</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Эстетичный внешний вид. Гибкость черепицы позволяет реализовывать любые дизайнерские задумки</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Навесы из мягкой кровли защищают от осадков и ветра, так как полностью герметичны</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Конструкции из мягкой кровли служат много лет и стоят недорого относительно навесов из других материалов</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/soft2.jpg" alt="soft">
-                        </div>
-                        <a href="soft-roof.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits wood">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Привлекательный внешний вид навеса. Дерево - натуральный и экологичный материал, выглядит дорого и добротно</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Удобство монтажа и обработки материала. Дерево легко пилится и крепится, не требует использования сложного оборудования</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Возможно реализовать любую архитектурную задумку, сделать арочный или прямой навес</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Легкий вес пиломатериалов и простота в транспортировке</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/wood2.jpg" alt="wood">
-                        </div>
-                        <a href="wood.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits profile-pipe">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Навесы из профильной трубы быстро и легко собираются. Достаточно нескольких дней, чтобы конструкция была готова</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>Из профильной трубы можно построить арочные и прямые навесы. Также можно реализовать элементы декора</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Профильная труба используется при строительстве навесов любого масштаба - от небольших конструкций до масштабных проектов</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Материал имеет малый вес, а монтаж не требует фундаментных работ. Это значительно экономит время</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/tube2.jpg" alt="tube">
-                        </div>
-                        <a href="profile-pipe.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits metal-tile">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Навесы из металлочерепицы прочны, долговечны и просты в обслуживании</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>На конструкциях не образуются плесень, грибки и мох. Загрязнения легко смываются с поверхности водой</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Материал имеет разнообразную цветовую гамму. Цвет сохраняет насыщенность долгое время</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Навесы устойчивы к погодным изменениям и не боятся дождя, снега, ветра, не пропускают ультрафиолетовые лучи</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/met-tile2.jpg" alt="met-tile">
-                        </div>
-                        <a href="metal-tile.html">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="materials__benefits forging">
-                    <div class="materials__text">
-                        <div class="text__block">
-                            <div class="text__number">1</div>
-                            <p>Кованые элементы сочетаются с любым видом материала для навеса, при этом эстетично дополняют внешний вид навеса</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">2</div>
-                            <p>С помощью кованых элементов можно реализовать эксклюзивный дизайн навеса</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">3</div>
-                            <p>Плотная структура материала ковки не поддается повреждениям и устойчива к погодным изменениям</p>
-                        </div>
-                        <div class="text__block">
-                            <div class="text__number">4</div>
-                            <p>Кованый навес подойдет для частных, общественных и коммерческих территорий</p>
-                        </div>
-                    </div>
-                    <div class="materials__pic">
-                        <div class="materials__img">
-                            <img src="img/index/forg2.jpg" alt="forged">
-                        </div>
-                        <a href="forging">
-                            <div class="btn btn_blue">Подробнее</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="phone wrapper">
         <h1>Узнать стоимость навеса</h1>
@@ -852,9 +855,10 @@
             </ul>
         </div>
     </footer>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="js/materials.js"></script>  
+    <script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
+    <script src="js/materials.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/call.js"></script>
+    <script src="js/filterizr.js"></script>
 </body>
 </html>

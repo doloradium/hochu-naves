@@ -866,6 +866,13 @@ header{
         width: 100%;
         padding: 0 20px;
     }
+    .materials__text--new {
+        p {
+            @media screen and (max-width: 1280px) {
+                text-align: center;
+            }
+        }
+    }
     .materials__text, .materials__text--new{
         width: 55%;
         @media screen and (max-width: 1280px) {
@@ -1009,10 +1016,10 @@ header{
 .phone {
     padding: 0 20px;
     margin-bottom: 100px;
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 }
 
 .phone__container {
@@ -1047,6 +1054,7 @@ header{
 }
 
 .pros {
+    margin-top: 50px;
     .pros__container {
         h1 {
             font-size: 32px;
@@ -1171,6 +1179,9 @@ footer {
 .calc__main {
     margin-top: 150px;
     padding: 0 20px;
+    h1 {
+        text-align: center;
+    }
 }
 
 .calc__article {
@@ -1284,10 +1295,6 @@ footer {
         }
 }
 
-h1 {
-    text-align: center;
-}
-
 .calc__grid-three {
     flex-basis: 31.5%;
     @media screen and (max-width: 700px) {
@@ -1388,4 +1395,11 @@ input[type=checkbox] {
     outline: none;
     border: none;
     margin: 5px 10px 5px 0;
+}
+
+.success {
+    text-align: center;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+    padding: 0 20px;
 }
